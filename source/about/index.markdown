@@ -19,7 +19,7 @@ My apps are available in App Store :
 
 email me : 460760604@qq.com
 
-Also know me at [github](https://github.com/wihing) or 
+Also know me at [github](https://github.com/wisonlin) or 
 [stackoverflow](http://stackoverflow.com/users/558017/wihing)
 
 Subscribe to my [RSS Feeds](http://wisonlin.github.com/atom.xml)
