@@ -5,6 +5,9 @@ tags:
 ---
 
 Swift 相比 Objective-C 的一项改进就是引进了范型(Generic Type)，有了范型，我们可以通过指定容器中对象的类型，让编译器可以做更多的类型检查。
+
+<!-- more -->
+
 比如：
 ```
 var words: [String] = ["Hello", "Swift"]
