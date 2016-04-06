@@ -10,7 +10,7 @@ tags:
 
 <!-- more -->
 
-比如在 Objective-C 中，以下代码会变异错误：
+比如在 Objective-C 中，以下代码会编译错误：
 ```
   view.frame.size.width = 2.0;  // compile error
 ```
