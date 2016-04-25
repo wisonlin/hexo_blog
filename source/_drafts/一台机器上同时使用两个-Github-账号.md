@@ -18,3 +18,16 @@ Host UOSIM.github.com
     IdentityFile ~/.ssh/UOSIM_github
 
 ssh -T git@UOSIM.github.com
+
+
+cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = git@UOSIM.github.com:UOSIM/dribbble_cache.git
+  
