@@ -50,7 +50,7 @@ find /Applications/Xcode.app -name symbolicatecrash -type f
 可以做一个快捷方式：
 
 ```
-alias symbolicatecrash '/Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash'
+alias symbolicatecrash='/Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash'
 ```
 
 需要先配置好 `DEVELOPER_DIR`，否则会报错。如下：
