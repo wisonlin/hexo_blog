@@ -2,6 +2,7 @@
 title: Swift Highlight 2 ：范型
 date: 2016-04-05 00:27:41
 tags:
+categories: Swift Highlight
 ---
 
 Swift 相比 Objective-C 的一项改进就是引进了范型(Generic Type)，有了范型，我们可以通过指定容器中对象的类型，让编译器可以做更多的类型检查。

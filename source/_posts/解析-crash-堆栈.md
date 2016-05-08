@@ -2,6 +2,7 @@
 title: 解析 crash 堆栈
 date: 2016-04-09 20:26:06
 tags:
+categories: iOS
 ---
 
 本文介绍了如何解析 iOS 的 crash 堆栈，分别使用了 `symbolicatecrash` 来自动解析整个堆栈，以及使用 `atos` 来解析单个地址的符号。

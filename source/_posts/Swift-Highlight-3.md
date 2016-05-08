@@ -2,6 +2,7 @@
 title: Swift Highlight 3 ：容器是结构体
 date: 2016-04-06 23:37:26
 tags: iOS, Swift, Copy
+categories: Swift Highlight
 ---
 
 Swift's `String`, `Array`, and `Dictionary` types are implemented as structures. This means that strings, arrays, and dictionaries are copied when they are assigned to a new constant or variable, or when they are passed to a function or method.

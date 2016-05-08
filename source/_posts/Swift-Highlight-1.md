@@ -2,6 +2,7 @@
 title: Swift Highlight 1 ：结构体的变量可以直接更改
 date: 2016-04-04 00:32:27
 tags:
+categories: Swift Highlight
 ---
 
 > Unlike Objective-C, Swift enables you to set sub-properties of a structure property directly.
