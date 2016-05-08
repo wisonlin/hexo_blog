@@ -1,7 +1,10 @@
 ---
 title: Swift Highlight 3 ：容器是结构体
 date: 2016-04-06 23:37:26
-tags: iOS, Swift, Copy
+tags:
+- iOS
+- Swift
+- Best Practice
 categories: Swift Highlight
 ---
 
