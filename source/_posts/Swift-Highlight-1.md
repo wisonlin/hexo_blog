@@ -1,5 +1,5 @@
 ---
-title: Swift Highlight 1
+title: Swift Highlight 1 ：结构体的变量可以直接更改
 date: 2016-04-04 00:32:27
 tags:
 ---

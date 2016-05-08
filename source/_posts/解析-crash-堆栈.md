@@ -73,7 +73,7 @@ symbolicatecrash xxx.crash
 首先，需要确认一下符号表是不是正确的。可以通过以下方式看看符号文件和堆栈是否是对应的 (判断 uuid 是否相同)：
 ```
 dwarfdump --uuid MyApp.app/MyApp
-dwarfdump --uuid xxx.app.dSYM/Contents/DWARF/Resources/MyApp
+dwarfdump --uuid xxx.app.dSYM/Contents/Resources/DWARF/Resources/MyApp
 grep "0x.*com.wison.xxx .*<" NoSymbolsTestxxx.crash
 ```
 如果不一样，那么说明崩溃堆栈和符号文件对应不上，很可能是搞错版本，或者打包的时候有问题导致符号文件生成不正确。

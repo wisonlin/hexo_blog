@@ -1,5 +1,5 @@
 ---
-title: Swift Highlight 2
+title: Swift Highlight 2 ：范型
 date: 2016-04-05 00:27:41
 tags:
 ---
