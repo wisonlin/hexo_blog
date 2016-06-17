@@ -1,0 +1,7 @@
+
+
+NS_DESIGNATED_INITIALIZER
+
+instancetype
+
+NS_REQUIRES_SUPER

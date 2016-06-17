@@ -19,6 +19,6 @@ My apps are available in App Store :
 
 email me : 460760604@qq.com
 
-Also know me at [github](https://github.com/wisonlin) or [stackoverflow](http://stackoverflow.com/users/558017/wihing)
+Also know me at [github](https://github.com/wisonlin) or [stackoverflow](http://stackoverflow.com/users/558017/wihing) or [weibo](http://weibo.com/1647580984/profile?topnav=1&wvr=6)
 
 Subscribe to my [RSS Feeds](http://wisonlin.github.com/atom.xml)
