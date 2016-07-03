@@ -11,7 +11,7 @@ categories: iOS
 
 <!-- more -->
 
-####**ViewController的初始化：**
+#### **ViewController的初始化：**
 
 从Storyboards中加载的时候，会调用initWithCode，如果不存在则调用init。之后对里面的每个对象调用awakeFromNib方法。
 从内存中alloc出来的情况下，调init方法。
@@ -28,7 +28,7 @@ B 找跟ViewController类名一样的文件，例如MyViewController，则查找
 4. 如果子类没有重写的loadView，则ViewController会从StroyBoards中找或者调用其默认的loadView，默认的loadView返回一个空白的UIView对象。
 注意第一步，ViewController是判断子类是否重写了loadView，而不是判断调用子类的loadView之后ViewController的View是否为空。就是说，如果子类重写了loadView的话，不管子类在loadView里面能否获取到View，ViewController都会直接调viewDidLoad完成View的加载。
 
-####** ViewController的卸载View的步骤：**
+#### ** ViewController的卸载View的步骤：**
 
 1. 系统发出内存警告或者ViewController本身调用导致didReceiveMemoryWarning被调用
 2. 如果此时view没有被加入到任何视图树上，则调用viewWillUnload之后释放View
