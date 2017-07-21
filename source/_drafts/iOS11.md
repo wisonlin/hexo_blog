@@ -192,9 +192,31 @@ A：目前来说没有限制。怀疑是句柄达到上限？当然，如果有�
 
 
 
+## Keynote Agenda
+
+ARKit
+
+功能
+
+工作原理
+World Tracking
+Visual Inertial Odometry
+No external setup
+
+Plan Detection
+Hit-testing
+Light estimation
+
+Easy integration
+AR Views
+Custom rendering
+
+流程
+平面
+Simultaneous localization and mapping
+demo
 
 
-Keynote Agenda
 Core ML
 
 工作原理
@@ -203,5 +225,70 @@ Core ML
 流程
 自定义 Model
 
-ARKit
+## Work Shop
 
+day 1 上午
+sesion：
+	重新讲解了一遍 Introducing ARKit
+	
+Q&A：
+Technical Inside(SLAM)
+Marker (Core ML + Vision)
+Feature Point 计算
+Shadow (SceneKit)
+Vertival Plane & angle (not support (yet), Feature Point)
+zhiwei_wang@apple.com
+
+
+
+NEW SURFACE DETECTED AT (-0.09, -0.97, -0.81)
+NEW SURFACE DETECTED AT (0.27, -1.11, -0.98)
+NEW SURFACE DETECTED AT (-0.60, -0.28, -0.20)NEW SURFACE DETECTED AT (0.32, -1.00, -1.05)
+
+1,2,4 是同一个平面，第三个值是 z，误差有点大
+
+
+day 2
+
+1.RGB presantation, downside to metal
+2.CUBE
+3.barrier area
+4.marker 的识别和 arkit 合并？(主要是考虑性能问题)（NO）
+5. depth map (NO), 可以通过 feature point 产生
+6. 光的方向（NO）
+7.忽略
+8. 前置摄像头（主要限制在 moving tracking）
+9. 精准的边界检测
+10. camera， flashlighgt 参数（可以）（待定）
+10.1 captureSesion 和 arsession 不能同时工作。
+11. opengl
+12. shadow solution(scenekit session)
+13. ARKit 的工作原理（看session）
+14. 支持 FBX ？
+15. size estimation accuration
+16. workd tracking 的合理范围（很难讲 feature point 够多就行）
+17. relative position of 2 phones(u may try it upside the arkit; or make the phone togather while init)
+18. A9 UP
+19. vetical plane(cant provide robust solution)
+20. how to reduce power consumption of caturesession & cmmotion(10-15%, 25-30%, do as...as we can)
+21. 
+22. feature point 的更多信息（NO）
+23. ARKit 提供 GPU 接口（NO）
+24. 多人游戏（可以，但是 arsence 不行）
+25. when world created?
+26. area learning?
+27. 性能问题（10%-15% iphone 7 and newer device， wrorld tracking using cpu）
+28. 忽略
+29. featrue plane (no plan (yet))
+30. 
+
+总结：
+
+1. 关于 marker
+	很多人问到了 marker，他们还是建议在 ARKit 的基础上去做这个特性，可以尝试使用 Core ML+Vision。（其实他们很不理解，SLAM 是比 marker 更先进的技术，为啥你们要用 marker）
+2. 为什么不支持前置摄像头
+	像直播等场景，主要是使用前置摄像头，然而 ARKit 并不支持。他们给的理由是，ARKit 是很依赖运动信息的，直播的时候手机一般是固定在一个地方，很难检测。
+3. 平面的边界
+	大家的需求普遍需要一个精准的平面边界，不过目前还是做不到。他们给的回答是随着平面识别的进行，识别的平面会越来越大，基本可以把整个现实中的平面识别出来（当然这里指的是方形平面），精度不够，但是大部分情况下是够用的。
+4. 性能问题
+	平面识别和追踪是用 CPU 跑的，渲染则是用 GPU。CPU 方面，iPhone 7 及以上的设备占用 10%-15%，较低端的设备则占用 25%-30%。
